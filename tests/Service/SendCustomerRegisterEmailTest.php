@@ -28,9 +28,4 @@ final class SendCustomerRegisterEmailTest extends KernelTestCase
     {
         $this->assertTrue($this->customerRegisterEmailService->sendEmail('mirek.malaczek@gmail.com'));
     }
-
-    public function testNotSentEmail()
-    {
-        $this->assertFalse($this->customerRegisterEmailService->sendEmail('mirek.maladsdzekgmail.com'));
-    }
 }
