@@ -4,5 +4,5 @@ namespace App\Interfaces;
 
 interface CustomerEmailInterface
 {
-    public function sendEmail(string $recipient);
+    public function sendEmail(string $recipient): bool;
 }
